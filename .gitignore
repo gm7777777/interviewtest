@@ -1,0 +1,17 @@
+# Created by .ignore support plugin (hsz.mobi)
+/workflow-admin/workflow-admin-pc/overlays/
+.idea/
+workflow-admin/workflow-admin-controller/target/
+workflow-admin/workflow-admin-pc/overlays/
+workflow-admin/workflow-admin-pc/target/
+workflow-console/workflow-console-api/target/
+workflow-console/workflow-console-service/target/
+/workflow-console/workflow-console-api/target/
+/workflow-console-msdp/workflow-console-api/target/
+/workflow-console-msdp/workflow-console-service/target/
+/workflow-console-msdp/workflow-console-api/target/
+/workflow-console-msdp/workflow-console-service/target/
+**/**/*.iml
+*.iml
+target
+interviewexp.iml
