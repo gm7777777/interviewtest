@@ -1,5 +1,5 @@
 package dynamicprogram.arraymaxascendsubsuq;
-//组最大不连续递增子序列
+//数组最大不连续递增子序列
 public class ArrayMaxAscendSubSuq {
 
     public static int MaxChildArrayOrder(int a[]) {

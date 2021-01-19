@@ -1,5 +1,6 @@
 package numarrange;
 
+//输出所有组合
 public class NumArrange {
 
     //排列数组

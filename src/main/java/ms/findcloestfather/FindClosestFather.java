@@ -94,3 +94,21 @@ public class FindClosestFather {
 //        return commomParent;
 //    }
 }
+
+//
+//    public BinaryNode<T> commonNode(BinaryNode<T> node1, BinaryNode<T> node2, BinaryNode<T> root){
+//        8         if(root == null)
+//            9             return null;
+//        10         if(node1.element == root.element || node2.element == root.element)
+//            11             return root;
+//        12         /*
+//13          * 若 left==null, node1,node2 都不在 root.left子树中
+//14          * 若right==null,node1,node2 都不在root.right子树中
+//15          */
+//        16         BinaryNode<T> left = commonNode(node1, node2, root.left);
+//        17         BinaryNode<T> right = commonNode(node1, node2, root.right);
+//        18
+//        19         if(left != null && right != null)
+//            20             return root;
+//        21         return left == null ? right : left;
+//        22     }
