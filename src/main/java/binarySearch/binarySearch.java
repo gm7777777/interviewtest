@@ -20,9 +20,9 @@ public class binarySearch {
         }
         while (low <= high) {
             middle = (low + high) / 2;
-            if (middle == key) {
-                return array[middle];
-            } else if (middle < key) {
+            if (array[middle] == key) {
+                return middle;
+            } else if (array[middle] < key) {
                 low = middle + 1;
             } else {
                 high = middle - 1;

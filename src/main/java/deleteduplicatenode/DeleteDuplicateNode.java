@@ -2,6 +2,8 @@ package deleteduplicatenode;
 
 import com.common.Node;
 
+
+//链表去重
 public class DeleteDuplicateNode {
 
     public Node deleteDuplicates(Node head) {
