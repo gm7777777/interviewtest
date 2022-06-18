@@ -1,6 +1,7 @@
 package heapSeq;
 
 import java.util.Arrays;
+import java.util.PriorityQueue;
 
 public class HeadSeq {
 
@@ -9,6 +10,11 @@ public class HeadSeq {
         int[] a = {37,2,5,1,8,4,45,67,798,34,23};
         heapSort(a);
         System.out.println(Arrays.toString(a));
+        PriorityQueue q = new PriorityQueue();
+        for(int i : a){
+            q.add(i);
+        }
+        System.out.println(a.toString());
     }
 
     /**

@@ -1,9 +1,6 @@
 package arrayallsubsets;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 //数组的所有子序列
 public class ArrayAllSubsets {

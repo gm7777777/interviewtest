@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 
 public class CutTreeWithOrder {
 
-    static int[][] dirs = {{1,2,3},{0,4,0},{5,6,7}};
+    static int[][] dirs = {{1,2,3},{0,0,4},{7,6,5}};
     public static void main(String[] args) {
             System.out.println(cutTreeSteps(dirs));
     }
