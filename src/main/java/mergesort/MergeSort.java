@@ -1,4 +1,4 @@
-package mergesort;
+package Mergesort;
 
 public class MergeSort {
 

@@ -16,7 +16,7 @@ public class SingletonPool {
     }
 
     public static SingletonPool getInstance(){
-        return SingletonPool.InnerClass.singleton;
+        return InnerClass.singleton;
     }
 
     public void createThreadPool(int coreSize,int maxSize,int concurrencyTaskSize){

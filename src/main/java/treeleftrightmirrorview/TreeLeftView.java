@@ -19,7 +19,7 @@ public class TreeLeftView {
             child = 0;
             for (int i = 0; i < size; i++) {
                 TreeNode node1 = queue.poll();
-               // i = 0,说明是该层第一个结点
+                // i = 0,说明是该层第一个结点
                 //if i == size-1; right
                 if (i == 0) {
                     System.out.println(node1.value);

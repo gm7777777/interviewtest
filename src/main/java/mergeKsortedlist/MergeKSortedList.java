@@ -1,4 +1,4 @@
-package mergeKsortedlist;
+package mergeKSortedList;
 
 import com.common.Node;
 
