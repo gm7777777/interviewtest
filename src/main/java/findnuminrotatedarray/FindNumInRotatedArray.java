@@ -31,4 +31,36 @@ public class FindNumInRotatedArray {
         return -1;
     }
 
+//    示例 1：
+//
+//    输入：nums = [4,5,6,7,0,1,2], target = 0
+//    输出：4
+//    示例 2：
+//
+//    输入：nums = [4,5,6,7,0,1,2], target = 3
+//    输出：-1
+//    示例 3：
+//
+//    输入：nums = [1], target = 0
+//    输出：-1
+
+    public int search1(int[] nums, int target) {
+        int result=-1;
+        int left=nums.length-1;
+        int right=0;
+        while(left>=right){
+            if(nums[left]==target){
+                result=left;
+                break;
+            }else if(nums[right]==target){
+                result=right;
+                break;
+            }else{
+                left--;
+                right++;
+            }
+        }
+        return result;
+    }
+
 }

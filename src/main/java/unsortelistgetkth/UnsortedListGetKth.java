@@ -64,4 +64,35 @@ public class UnsortedListGetKth {
             }
         }
     }
+
+
+
+
+    //得到第K个快排
+    int ans = 0;  //答案
+    void alter_quicksort(int[] a, int k, int low, int high) {
+        int pivot = a[low];
+        int low0 = low, high0 = high;
+        while (low < high) {
+            while (low < high && a[high] >= pivot) high--;
+            a[low] = a[high];
+            while (low < high && a[low] <= pivot) low++;
+            a[high] = a[low];
+        }
+        a[low] = pivot;
+        //上面几行都是常规的快排
+        //下面的便是对快排的改造，只对左右区间中的一个区间进行递归，保证时间复杂度为O(n)，证明过程在算法导论9.2，我也没看懂哈哈哈
+        if (low == a.length - k) {
+            ans = a[low];
+            return;
+        }
+        else if (low < a.length-k)
+            alter_quicksort(a, k, low + 1, high0);
+        else
+            alter_quicksort(a, k, low0, low - 1);
+    }
+    int findKthLargest(int[] nums, int k) {
+        alter_quicksort(nums,k,0,nums.length-1);
+        return ans;
+    }
 }

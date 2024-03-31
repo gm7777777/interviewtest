@@ -33,7 +33,7 @@ public class LongestPalindrome {
         return s.substring(start,end+1);
     }
     public static int length(String s,int a,int b){
-        while(a>=0&&b<=s.length()&&s.charAt(a)==s.charAt(b){
+        while(a>=0&&b<=s.length()&&s.charAt(a)==s.charAt(b)){
             a--;
             b++;
         }

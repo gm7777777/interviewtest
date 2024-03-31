@@ -1,5 +1,6 @@
 package isolatedisland;
 
+//计算岛的数量
 public class Isolatedisland {
 
     public static void main(String[] args) {
